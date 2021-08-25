@@ -6,7 +6,7 @@ const gifDiv = document.getElementById("gifDisplay");
 
 async function getGIF(q) {
     const api_key = "MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym";
-    const res = await axios.get("http://api.giphy.com/v1/gifs/search", { params: { q, api_key } });
+    const res = await axios.get("https://api.giphy.com/v1/gifs/search", { params: { q, api_key } });
     let resRand = res.data["data"][Math.floor(Math.random() * (res.data["data"]).length)];
     let resRandIndex = res.data["data"].indexOf(resRand);
     let resRandImg = res.data["data"][resRandIndex]["images"]["fixed_height"]["url"];
