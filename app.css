@@ -1,0 +1,16 @@
+body {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+#form {
+    text-align: center;
+}
+
+#gifDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
